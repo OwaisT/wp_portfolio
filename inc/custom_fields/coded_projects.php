@@ -44,7 +44,7 @@ function save_coded_projects_meta_box_data($post_id) {
         $react_short_desc = $_POST['react_short_desc'];
         // Ensure line breaks are correctly preserved in the database
         $react_short_desc = nl2br($react_short_desc);  // Convert new lines to <br> tags
-        // Save the description ts with <br> tags, allowing TinyMCE to preserve them
+        // Save the description with <br> tags, allowing TinyMCE to preserve them
         update_post_meta($post_id, '_react_short_desc', wp_kses_post($react_short_desc));
     }
 
@@ -58,7 +58,7 @@ function save_coded_projects_meta_box_data($post_id) {
         $next_short_desc = $_POST['next_short_desc'];
         // Ensure line breaks are correctly preserved in the database
         $next_short_desc = nl2br($next_short_desc);  // Convert new lines to <br> tags
-        // Save the description ts with <br> tags, allowing TinyMCE to preserve them
+        // Save the description with <br> tags, allowing TinyMCE to preserve them
         update_post_meta($post_id, '_next_short_desc', wp_kses_post($next_short_desc));
     }
 
@@ -72,7 +72,7 @@ function save_coded_projects_meta_box_data($post_id) {
         $python_short_desc = $_POST['python_short_desc'];
         // Ensure line breaks are correctly preserved in the database
         $python_short_desc = nl2br($python_short_desc);  // Convert new lines to <br> tags
-        // Save the description ts with <br> tags, allowing TinyMCE to preserve them
+        // Save the description with <br> tags, allowing TinyMCE to preserve them
         update_post_meta($post_id, '_python_short_desc', wp_kses_post($python_short_desc));
     }
 
