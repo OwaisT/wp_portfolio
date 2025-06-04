@@ -5,7 +5,7 @@ Version: 1.0
 */
 
 :root {
-    --primary-color: #5E64F7; /* Define the variable and assign a color value */
+    --primary-color: #5E64F7;
     --secondary-color: #E1E2FA;
     --primary-background-color: #FFFFFF;
     --primary-text-color: #000000;
