@@ -1,0 +1,146 @@
+/*
+Theme Name: WP Portfolio
+Template: twentytwentyfive
+Version: 1.0
+*/
+
+:root {
+    --primary-color: #5E64F7; /* Define the variable and assign a color value */
+    --secondary-color: #E1E2FA;
+    --primary-background-color: #FFFFFF;
+    --primary-text-color: #000000;
+    --tertiary-color: #1D24CA;
+    --smooth-appear-animation: smoothAppearAnimation 0.5s forwards;
+    --delay : 0.5s;
+    --radius-border : 15px;
+    --shadow : -1px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    font-family: 'montserrat' !important;
+}
+
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+a {
+    text-decoration : none !important;
+    transition: var(--delay) !important; 
+}
+
+a:hover {
+    text-decoration : none !important;
+    color: var(--secondary-color) !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+.flx-vert{
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-vert-cntr{
+    justify-content: center;
+}
+
+.row-flex-cntr{
+    justify-content: center;
+}
+
+.wp-block-button__link {
+    transition: var(--delay) !important;
+}
+
+.is-style-outline .wp-block-button__link:hover {
+    background: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    border : 1px solid var(--primary-color) !important;
+}
+
+.txt-shdw{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.txt-cntr{
+    text-align: center;
+}
+
+.txt-jstfy{
+    text-align: justify;
+}
+
+.txt-smbld{
+    font-weight: 600;
+}
+
+.brng-t-top {
+    position: relative !important;
+    z-index: 100 !important;
+    background: var(--primary-background-color) !important;
+}
+
+.send-t-back {
+    z-index: 0 !important;
+}
+
+.video-hero-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    aspect-ratio: 16/7 !important;
+    background-color: #000000;
+    color: var(--primary-background-color);
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+  
+.video-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.cntct-btn {
+    transition: var(--delay) !important;
+    opacity : 0;
+    transform: translateX(-200px);
+}
+
+.cntct-btn:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
