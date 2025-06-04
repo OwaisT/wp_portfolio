@@ -26,8 +26,7 @@ if (sldIn.length > 0) {
         duration: 1,
         x: -200,
         opacity: 0,
-        ease: "power2.in",
-        stagger: 0.2
+        ease: "power2.in"
     });
 }
 
