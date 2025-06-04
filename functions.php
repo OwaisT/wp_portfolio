@@ -16,7 +16,7 @@ function wp_portfolio_theme_styles() {
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array($parent_style), filemtime(get_stylesheet_directory() . '/style.css'));
 
 }
-add_action('wp_enqueue_scripts', 'orbweber_theme_styles');
+add_action('wp_enqueue_scripts', 'wp_portfolio_theme_styles');
 
 require_once get_stylesheet_directory() . '/anims/import-anims.php';
 require_once get_stylesheet_directory() . '/inc/assemble-for-import.php';
