@@ -19,4 +19,4 @@ function wp_portfolio_theme_styles() {
 add_action('wp_enqueue_scripts', 'wp_portfolio_theme_styles');
 
 require_once get_stylesheet_directory() . '/anims/import-anims.php';
-require_once get_stylesheet_directory() . '/inc/assemble-for-import.php';
+require_once get_stylesheet_directory() . '/inc/assemble_for_import.php';
